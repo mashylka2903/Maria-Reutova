@@ -1,0 +1,300 @@
+@import "constant";
+@import "header";
+@import "variable";
+@import "mixin";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+
+.block-top {
+  height: 613px;
+  background-color: #e8e8e8;
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+    &-image {
+      background: #e8e8e8 url("../../assets/img/top-image-man-smile.jpg") no-repeat center right;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    &-text  {
+    height: 92px;
+    border-left: 12px solid $secondColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 12px;
+
+
+    h2,h3 {
+      margin: 0;
+      text-transform: uppercase;
+      color: #222222;
+      font-weight: 900;
+    }
+
+    h2 {
+      font-size: 60px;
+      line-height: 65px;
+
+    }
+
+    h3 {
+      font-size: 40px;
+      line-height: 50px;
+
+      span {color: $secondColor;}
+    }
+
+  }
+
+}
+.banner {
+  height: 843px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 78px !important;
+
+  a {position: relative;}
+
+  img{
+    margin-top: 20px;
+    margin-right: 20px;
+    display: block;
+  }
+
+  &-text {
+    @include shoppingCart-text(18);
+    font-weight: 900;
+    background: #ffffff;
+    position: absolute;
+    top:42px;
+    left:0;
+    padding:16px 19px;
+
+    span {
+      font-size: 30px;
+      color: $secondColor;
+
+    }
+  }
+}
+.featured {
+  height: 1095px;
+
+  h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #222222;
+    text-align: center;
+    margin: 100px 0 0;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #9f9f9f;
+    text-align: center;
+    margin: 16px 0 59px 0;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 765px;
+
+    &-item {
+      display: inline-block;
+      position: relative;
+      height: 364px;
+      width: 261px;
+      text-decoration: none;
+      margin-bottom: 39px;
+
+        &-image {
+          width: inherit;
+          height: 280px;
+          object-fit: cover;
+        }
+
+
+      .product-title {
+        color: #222222;
+        font-size: 13px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-top: 19px;
+        margin-left: 15px;
+      }
+
+      .price {
+        color: $secondColor;
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 17px;
+        margin-left: 14px;
+      }
+    }
+
+
+
+    /* Общие стили для перекрывающих элементов */
+    .cover-bg,
+    .cover-text {
+      display: none;
+      position: absolute;
+      top: 0;
+      bottom: 83px;
+      left: 0;
+      right: 0;
+    }
+
+    .gallery-item:hover .cover-bg,
+    .gallery-item:hover .cover-text{
+      display: flex;
+      transition-duration: .5s;
+    }
+
+    .gallery-item:hover {
+      box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+      transition-duration: .5s;
+    }
+
+    /* Перекрытие */
+
+    .cover-bg {
+      background: $mainColor;
+      -moz-opacity: .6;
+      opacity: .6;
+    }
+
+    .cover-text {
+      margin-top: 98px;
+      margin-left: 70px;
+      border: 1px solid #ffffff;
+      width: 123px;
+      height: 39px;
+
+      .inbox-text {
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 700;
+        display: flex;
+        margin-left: 12px;
+        align-items: center;
+        padding-top: 5px;
+        
+
+        img {margin-right: 8px;}
+      }
+    }
+
+
+  }
+
+  a.button {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    background: $secondColor;
+    text-decoration: none;
+    width: 212px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 79px;
+    &:hover {
+      background-color: darken($secondColor,5%);
+      transition-duration: .5s;
+    }
+
+    i {margin-left: 9px;}
+
+  }
+}
+.offer-bottom {
+  display: flex;
+  height: 529px;
+
+  &-left {
+    background: url("../../assets/img/Girl-under-snow-cover.png") no-repeat, url('../../assets/img/Girl-under-snow.jpg') no-repeat;
+    width: 767px;
+
+    .text {
+      font-size: 32px;
+      color: #ffffff;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-top: 146px ;
+      margin-left: 39px;
+
+    h2 {
+      font-size: 54px;
+      margin: 0;
+      line-height: 41px;
+
+      span {
+        color: $secondColor;
+      }
+    }
+    }
+    }
+  &-right {
+    background: #222224;
+    width: 373px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    &-item {
+      display: flex;
+      justify-content: space-around;
+
+      &-image1 {
+        background: url("../../assets/img/offer-icon-1.png") no-repeat center top;
+        width: 48px;
+        height: 48px;
+      }
+      &-image2 {
+        background: url("../../assets/img/offer-icon-2.png") no-repeat center top;
+        width: 48px;
+        height: 48px;
+      }
+      &-image3 {
+        background: url("../../assets/img/offer-icon-3.png") no-repeat center top;
+        width: 48px;
+        height: 48px;
+      }
+
+      .text {
+        width: 220px;
+        h2 {
+          color: #fbfbfb;
+          font-size: 20px;
+          font-weight: 700;
+          margin: 0;
+        }
+        p {
+          color: #fbfbfb;
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 24px;
+          margin: 17px 0 0 0;
+
+        }
+      }
+    }
+
+
+  }
+  }
+
+@import "footer";
+
+
+
+
