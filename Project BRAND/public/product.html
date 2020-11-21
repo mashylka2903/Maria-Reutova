@@ -9,7 +9,7 @@
 <body>
 <div class="header container">
     <div class="header-left">
-        <a class="logo" href="index.html"><img src="../src/assets/imglogo.png" alt="Brand">bran<span>d</span></a>
+        <a class="logo" href="index.html"><img src="../src/assets/img/logo.png" alt="Brand">bran<span>d</span></a>
         <form method="get">
             <div class="browse">Browse<i class="fas fa-caret-down"></i></div>
             <input type="text" name="search" placeholder="Search for Item..">
@@ -17,7 +17,7 @@
         </form>
     </div>
     <div class="header-right">
-        <a href="#" class="header-cart"><img src="../src/assets/imgheader-cart.png" alt="cart"></a>
+        <a href="#" class="header-cart"><img src="../src/assets/img/header-cart.png" alt="cart"></a>
         <a href="#" class="header-account-bar">My Account<i class="fas fa-caret-down"></i></a>
     </div>
 
@@ -155,6 +155,7 @@
             <div class="price">
                 <h2>Price</h2>
                 <div class="price-submenu">
+                    
                     <div class="bar">
                     <div class="bar2"></div>
                         <div class="bar2-circle"></div>
@@ -191,8 +192,7 @@
             </div>
         </div>
         <div id = "catalog" class="gallery">
-            <script src="../src/components/js/catalog.js">                                 
-            </script>
+            
             
         </div>
         <div class="gallery-nav">
@@ -246,7 +246,7 @@
 <div class="subscribe">
     <div class="container">
         <div class="subscribe-left">
-            <img src="../src/assets/imgsubscribe-photo.jpg" alt="Photo">
+            <img src="../src/assets/img/subscribe-photo.jpg" alt="Photo">
             <div class="text">
                 <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
                     a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
@@ -276,7 +276,7 @@
 <div class="footer">
     <div class="container">
         <div class="text">
-            <a class="logo" href="index.html"><img src="../src/assets/imglogo.png" alt="Brand">bran<span>d</span></a>
+            <a class="logo" href="index.html"><img src="../src/assets/img/logo.png" alt="Brand">bran<span>d</span></a>
             <p>Objectively transition extensive data rather than cross functional solutions.
                 Monotonectally syndicate multidisciplinary materials before go forward benefits.
                 Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.
@@ -324,54 +324,6 @@
         </div>
     </div>
 </div>
-<!--
-<script>
-    const NAMES = ['Mango People T-Shirt', 'Banana People T-Shirt', 'Strawberry People T-Shirt', 'Orange People T-Shirt', 'Pumpkin People T-Shirt', 'Pineapple People T-Shirt', 'Cucumber People T-Shirt', 'Tomato People T-Shirt', 'One More T-Shirt'];
-    const PRICES = [52, 53, 55, 67, 69, 94, 23, 45, 200];
-
-            const catalog = {
-            items: [],
-                       
-            init() {
-                this.container = document.querySelector('#catalog');
-                this.items = getItems();
-                this.render();
-            },
-            
-            render() {
-                let htmlStr = '';
-                this.items.forEach((item, index) => {
-                    let imgURL = `img/product-gallery-img${index + 1}.jpg`;
-                    htmlStr += `
-                    <a href="#" class="gallery-item">
-                        <img src="${imgURL}" alt="Pic${index + 1}" class="gallery-image">
-                        <h3 class="product-title">${item.productName}</h3>
-                        <h3 class="price">$${item.productPrice}</h3>
-                        <div class="cover-bg"></div>
-                        <div class="cover-text">
-                            <p class="inbox-text">
-                            <img src="../src/assets/imggallery-cart.png" alt="">
-                            Add to Cart</p></div>
-                    </a>
-                    `;
-                });
-                this.container.innerHTML = htmlStr;
-            }
-        }
-
-        catalog.init();
-        //
-
-        function createNewItem(name, price) {
-            return {
-                productName: name,
-                productPrice: price
-            }
-        }
-
-        function getItems() {
-            return NAMES.map((name, index) => createNewItem(NAMES[index], PRICES [index]));
-        }
-</script>-->
+<script src="../src/components/js/goods.js"></script>
 </body>
 </html>

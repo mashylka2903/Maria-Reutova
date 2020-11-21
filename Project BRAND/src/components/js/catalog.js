@@ -8,7 +8,7 @@ const catalog = {
     url: 'https://raw.githubusercontent.com/kellolo/static/master/JSON/catalog.json',
 
     init() {
-        this.container = document.querySelector('#featured-gallery');
+        this.container = document.querySelector('#catalog');
         this._get(this.url)
         .then(items => {
             this.items = items;
@@ -43,15 +43,3 @@ const catalog = {
 }
 
 catalog.init();
-/*
-
-function createNewItem(name, price) {
-    return {
-        productName: name,
-        productPrice: price
-    }
-}
-
-function getItems() {
-    return NAMES.map((name, index) => createNewItem(NAMES[index], PRICES [index]));
-}*/
