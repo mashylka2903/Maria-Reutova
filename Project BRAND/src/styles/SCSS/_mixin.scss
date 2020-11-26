@@ -1,0 +1,27 @@
+@mixin shoppingCart-text ($_fsize){
+  color: #222222;
+  font-size: $_fsize+px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+@mixin shoppingCart-forms ($formwidth, $formheight) {
+  width: $formwidth +px;
+  height: $formheight+px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+}
+@mixin pagination ($paginationWidth, $paginationHeight){
+  display: flex;
+  justify-content: space-between;
+  width: $paginationWidth+px;
+  height: $paginationHeight+px;
+  }
+@mixin line ($lineWidth, $lineHeight, $lineColor) {
+  width: $lineWidth+px;
+  height: $lineHeight+px;
+  background: $lineColor;
+}
+
+
+

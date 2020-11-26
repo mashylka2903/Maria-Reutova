@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>Собери свой гамбургер</h1> 
+  
+  <h2>Выбери размер</h2>
+
+  <form class = "hamburger"> 
+    <input type="radio" id="big" name="size" value="big" data-price="100" data-calories="40" checked>
+    <label for="big">Большой</label>
+    <input type="radio" id="small" name="size" value="small" data-price="50" data-calories="20">
+    <label for="small">Маленький</label>
+  </form> 
+
+  <h2>Выбери фасон</h2>
+
+  <form class = "hamburger">
+    <input type="checkbox" id="cheese" name="stuffing" value="cheese" data-price="10" data-calories="20" checked>
+    <label for="cheese">С сыром (+10 рублей, +20 калорий).</label>
+    <input type="checkbox" id="salad" name="stuffing" value="salad" data-price="20" data-calories="50">
+    <label for="salad">С салатом (+20 рублей, +5 калорий).</label>
+    <input type="checkbox" id="potato" name="stuffing" value="potato" data-price="15" data-calories="10">
+    <label for="potato">С картофелем (+15 рублей, +10 калорий)</label>
+  </form> 
+
+  <h2>Посыпь сверху</h2>
+
+  <form class = "hamburger">
+    <input type="checkbox" id="pepper" name="topping" value="pepper" data-price="15" data-calories="0" checked>
+    <label for="pepper">Приправой</label>
+    <input type="checkbox" id="maionese" name="topping" value="maionese" data-price="20" data-calories="5">
+    <label for="maionese">Майонезом</label>
+ 
+  </form> 
+<br>
+  <button id="button"> Собрать </button>
+  <div class ="total" id="total"></div>
+
+
+
+<script src="hamburger.js"></script>
+
+<script>
+
+window.onload = () => {
+  document.getElementById ('button').addEventListener ('click' , () => {
+
+  let burger = new Hamburger('size', 'stuffing', 'topping');
+  console.log (burger);
+   burger.final();  
+  });
+};
+</script>
+</body>
+</html>
