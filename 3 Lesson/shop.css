@@ -1,13 +1,35 @@
+.top {
+    display: flex;
+    justify-content: flex-end;    
+}
 .btn-cart {
     width: 150px;
     height: 50px;
     color: white;
     font-size: 18px;
     font-weight: bold;
-    background-color: darkcyan;
-    
+    border: none;    
+    background-color:darkcyan;
+    position: relative;    
 }
 
+.basket {
+    position: absolute;
+    width: 300px;
+    top: 60px;
+    background-color: white;
+    border: 1px solid darkcyan;
+}
+
+.cart-item, .product-bio {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.product-desc {
+    margin-left: 10px;
+}
 .products {
     display: flex;
     align-items: center;
@@ -26,6 +48,22 @@
     font-size: 16px;
 }
 
-.basket {    
+.invisible {    
     display: none;
+}
+
+.search-form {
+    border-bottom: 2px solid darkcyan;
+    margin-right: 25px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.search-field, .fas {
+    border: none;
+    font-size: 18px;
+}
+
+.fas {
+    background-color: transparent;
 }

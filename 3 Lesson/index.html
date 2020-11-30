@@ -5,14 +5,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="shop.css">
+        <script src="https://kit.fontawesome.com/c72d0494e1.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <button class="btn-cart" type="button">КУПИТЬ</button>
-        <div class="basket"></div>
-    <div class="products"> </div>
+    
+        
+        <div class="top">
+            <form action="#" class="search-form">
+                <input type="text" class="search-field" value="Search">
+                <button class="btn-search" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            
+            <button class="btn-cart" type="button">КУПИТЬ</button>
+            <div class="basket">
+                <span class="ttl">TOTAL</span>
+            </div>
+        </div>   
+    
 
+    <div class="products"> </div>
+    
     <script src="shop.js"></script>
-    <script src="getrequest.js"></script>
+    <!--<script src="basket.js"></script>-->
+   
    
     </body>
     </html>
