@@ -1,0 +1,58 @@
+.search, .menu, .cart-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-cart {
+    font-size: 24px;
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+    border-color: black;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.btn-cart:focus {
+    outline: none;
+}
+
+.cart-block {
+    position: absolute;
+    width: 300px;
+    right:50px;
+    background-color: white;
+    
+}
+
+.cart-item {
+    padding-left: 10px;
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-right: 10px;
+    border:1px solid black;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+}
+
+.products h3 {
+    color: black;
+    font-size: 30px;
+}
+
+.products p {
+    font-size: 24px;
+}
+.buy-btn {
+    font-size: 18px;
+    color:white;
+    background-color: black;
+    width: 150px;
+    height: 50px;
+}
+

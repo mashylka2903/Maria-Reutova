@@ -1,0 +1,17 @@
+{
+  "name": "7-lesson",
+  "version": "1.0.0",
+  "description": "Internet shop demo",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Reutova Maria",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "node-static": "^0.7.11",
+    "nodemon": "^2.0.6"
+  }
+}

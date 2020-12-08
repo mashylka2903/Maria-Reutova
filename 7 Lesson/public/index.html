@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue JS shop</title>
+    <script src="https://kit.fontawesome.com/c72d0494e1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            
+            <div class="menu">
+                
+                <filter-el></filter-el>
+                <cart ref="cart"></cart>
+            </div>
+        </header>
+        <main>
+            <products ref="products"></products>
+            <error ref="error"></error>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    
+    <script src="./js/CartComponent.js"></script>
+    <script src="./js/ProductComponent.js"></script>
+    <script src="./js/FilterComponent.js"></script>
+    
+    <script src="./js/vue.js"></script>
+</body>
+</html>
